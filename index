@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Kangkung Search</title>
+</head>
+<body onload="tp()"></body>
+<script>
+function tp(){
+  window.location.replace("/search")
+}
+</script>
+</html>
