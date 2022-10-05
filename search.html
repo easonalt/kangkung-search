@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kangkung Search</title>
+    </head>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .kangkung {
+            position: absolute;
+            top: 20vh;
+            left: calc(50vw - 7.5vw);
+            width: 15vw;
+            animation: opa ease-in 0.3s
+        }
+
+        .kangkung-input {
+            position: absolute;
+            top: 55vh;
+            left: calc(50vw - 15vw);
+            width: 21vw;
+            font-size: 1.5vw;
+            animation: opa ease-in 0.3s
+        }
+
+        .kangkung-button {
+            position: absolute;
+            top: 55vh;
+            left: calc(50vw + 7.5vw);
+            width: 5vw;
+            font-size: 1vw;
+            animation: opa ease-in 0.3s 
+        }
+
+        @keyframes in {
+            0% {
+                top: 0vh;
+                opacity: 0;
+            }          
+            10% {
+                top: 15vh;
+                opacity: 0;
+            }          
+            70% {
+                top: 19vh;
+                opacity: 0.5;
+            }        
+            100% {
+                top: 20vh;
+                opacity: 1;
+            }               
+        }
+
+        @keyframes opa {
+            0% {
+                opacity: 0;
+            }          
+            10% {
+                opacity: 0;
+            }      
+            100% {
+                opacity: 1;
+            }               
+        }
+    </style>
+    <body>
+        <img class="kangkung" src="kangkung.png">
+        <input class="kangkung-input" id="input">
+        <button class="kangkung-button" onclick="search()">Find Pasar</button>
+    </body>
+    <script>
+        function search() {
+            window.location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        }
+    </script>
+</html>
